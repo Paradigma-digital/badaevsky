@@ -1,0 +1,217 @@
+@import "../../common/files/variables.scss";
+
+.life {
+  margin-top: 250px;
+  overflow: hidden;
+  @media (max-width: $tab) {
+    margin-top: 150px;
+  }
+  @media (max-width: $pre-mob) {
+    margin-top: 80px;
+  }
+  .life-lines {
+    height: 484px;
+    margin-top: 100px;
+    overflow: hidden;
+    background-image: url("../img/epochs/alert-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: $tab) {
+      height: 300px;
+    }
+    @media (max-width: $pre-mob) {
+      height: 178px;
+      margin-top: 80px;
+    }
+    .black-lines {
+      height: 100%;
+      position: relative;
+      .line {
+        width: 40px;
+        background: var(--black-color);
+        height: 800px;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @media (max-width: $tab) {
+          width: 26px;
+        }
+        @media (max-width: $pre-mob) {
+          width: 15px;
+          height: 400px;
+        }
+        &:nth-child(1) {
+          left: -1%;
+          transform: rotate(7deg);
+          @media (max-width: $tab-sm) {
+            display: none;
+          }
+        }
+
+        &:nth-child(2) {
+          left: 12%;
+          @media (max-width: $tab-sm) {
+            left: 4%;
+          }
+          span {
+            width: 195px;
+            left: -78px;
+            bottom: -200px;
+            @media (max-width: $tab) {
+              width: 127px;
+              left: -51px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 77px;
+              left: -31px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          left: 19%;
+          transform: rotate(8deg);
+          @media (max-width: $tab-sm) {
+            left: 13%;
+          }
+          span {
+            left: -45px;
+            width: 130px;
+            top: -240px;
+            @media (max-width: $tab) {
+              width: 97px;
+              left: -35px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 56px;
+              left: -20px;
+            }
+          }
+        }
+        &:nth-child(4) {
+          left: 27%;
+          @media (max-width: $tab-sm) {
+            left: 23%;
+          }
+        }
+        &:nth-child(5) {
+          left: 34%;
+          transform: rotate(-8deg);
+          @media (max-width: $tab-sm) {
+            left: 32%;
+          }
+          span {
+            left: -84px;
+
+            width: 207px;
+            bottom: -150px;
+            @media (max-width: $tab) {
+              width: 136px;
+              left: -54px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 83px;
+              left: -33px;
+            }
+          }
+        }
+        &:nth-child(6) {
+          left: 41%;
+
+          span {
+            left: -61px;
+
+            width: 160px;
+            bottom: -50px;
+            @media (max-width: $tab) {
+              width: 108px;
+              left: -39px;
+              bottom: 125px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 66px;
+              left: -25px;
+            }
+          }
+        }
+        &:nth-child(7) {
+          left: 47%;
+          transform: rotate(8deg);
+          @media (max-width: $tab-sm) {
+            display: none;
+          }
+        }
+        &:nth-child(8) {
+          left: 51%;
+          @media (max-width: $tab-sm) {
+            left: 52%;
+          }
+        }
+        &:nth-child(9) {
+          left: 57%;
+          transform: rotate(-8deg);
+          @media (max-width: $tab-sm) {
+            left: 61%;
+          }
+        }
+        &:nth-child(10) {
+          left: 61%;
+          @media (max-width: $tab-sm) {
+            left: 66%;
+          }
+        }
+        &:nth-child(11) {
+          left: 67%;
+          transform: rotate(8deg);
+          @media (max-width: $tab-sm) {
+            left: 75%;
+          }
+        }
+        &:nth-child(12) {
+          left: 93%;
+        }
+        span {
+          color: var(--red-color);
+          transform: rotate(-90deg);
+          display: block;
+          font-weight: 65;
+          font-size: 50px;
+          height: 42px;
+
+          line-height: 50px;
+          font-family: "TT Trailers", sans-serif;
+          letter-spacing: 5px;
+          white-space: nowrap;
+          margin: auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          // height: fit-content;
+          // width: fit-content;
+          padding: 0 15px;
+          background: var(--white-color);
+          text-transform: uppercase;
+          @media (max-width: $tab) {
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 3px;
+            height: 30px;
+          }
+          @media (max-width: $pre-mob) {
+            font-size: 17px;
+            line-height: 17px;
+            height: 18px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+  .banner {
+    margin-top: 100px;
+  }
+}

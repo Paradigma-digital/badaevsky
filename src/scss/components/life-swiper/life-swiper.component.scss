@@ -1,0 +1,57 @@
+.life-swiper-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  .life-swiper-tab {
+    display: none;
+
+    @media (max-width: $tab) {
+      display: block;
+    }
+  }
+  .life-swiper {
+    @media (max-width: $tab) {
+      display: none;
+    }
+  }
+  .life-swiper-tab {
+    .swiper-slide {
+      .image-wrapper {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .life-swiper-tab,
+  .life-swiper {
+    max-width: 1145px;
+    margin: auto;
+    .swiper-slide {
+      transition: all 300ms ease;
+      .image-wrapper {
+        padding-bottom: 55%;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+        }
+      }
+    }
+    .navigation {
+      position: absolute;
+      top: 67px;
+      right: 160px;
+      z-index: 2;
+      .swiper-button-disabled {
+        opacity: 0;
+      }
+      button {
+        transition: var(--trs-300);
+        background: none;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}

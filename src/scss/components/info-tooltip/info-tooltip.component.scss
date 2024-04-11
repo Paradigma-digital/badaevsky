@@ -1,0 +1,36 @@
+@import "../../common/files/variables.scss";
+
+.info-tooltip.active {
+  pointer-events: all;
+  transform: translateY(0);
+  opacity: 1;
+}
+.info-tooltip {
+  position: absolute;
+  bottom: 0;
+  width: 350px;
+  pointer-events: none;
+  transform: translateY(10%);
+  opacity: 0;
+  transition: var(--trs-300);
+  @media (max-width: $pre-mob) {
+    width: 250px;
+  }
+  .info-tooltip-content {
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 15px;
+    width: 100%;
+    padding: 12px 25px 12px 15px;
+    backdrop-filter: blur(5px);
+    p {
+      font-size: 12px;
+      line-height: 14px;
+      font-weight: 400;
+      font-family: "ITC-Officina", sans-serif;
+      color: var(--black-color);
+    }
+    span {
+      font-weight: 700;
+    }
+  }
+}

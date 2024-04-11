@@ -1,0 +1,24 @@
+:root {
+  --gray-color: #d6d6d6;
+  --gray-text-color: #9e9e9e;
+  --gray-bg-color: #f7f7f7;
+  --dark-color: #212121;
+  --black-color: #000;
+  --white-color: #fff;
+  --red-color: #a41119;
+
+  --trs-300: 300ms ease;
+  --trs-600: 600ms ease;
+  --shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.15);
+  --shadow-inset: 0px 4px 15px 0px rgba(0, 0, 0, 0.15) inset;
+}
+
+$desktop-xl: 2000px;
+$desktop-lg: 1920px;
+$desktop-md: 1440px;
+$desktop-md-2: 1400px;
+$desktop-sm: 1280px;
+$tab: 1024px;
+$tab-sm: 767px;
+$pre-mob: 630px;
+$mob: 500px;

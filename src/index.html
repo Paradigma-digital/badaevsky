@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('html/components/head/head.component.html', { 'title':'template', })
+  <body>
+    @@include('html/components/header/header.component.html', {})
+    <main>
+      @@include('html/components/hero/hero.component.html', {})
+      @@include('html/components/architecture/architecture.component.html', {})
+      @@include('html/components/epochs/epochs.component.html', {})
+      @@include('html/components/forest/forest.component.html', {})
+      @@include('html/components/life/life.component.html', {})
+      @@include('html/components/techno/techno.component.html', {})
+      @@include('html/components/ambassador/ambassador.component.html', {})
+    </main>
+    @@include('html/components/footer/footer.component.html', {})
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/Observer.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/EaselPlugin.min.js"></script>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,61 @@
+@import "../../common/files/variables.scss";
+
+.architecture-swiper-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  // display: flex;
+  // justify-content: center;
+  .architecture-swiper-tab {
+    display: none;
+
+    @media (max-width: $tab) {
+      display: block;
+    }
+  }
+  .architecture-swiper {
+    @media (max-width: $tab) {
+      display: none;
+    }
+  }
+  .architecture-swiper-tab {
+    .swiper-slide {
+      .image-wrapper {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+  .architecture-swiper-tab,
+  .architecture-swiper {
+    max-width: 1145px;
+    margin: auto;
+    .swiper-slide {
+      transition: all 300ms ease;
+      .image-wrapper {
+        padding-bottom: 55%;
+        position: relative;
+        img {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          object-fit: cover;
+        }
+      }
+    }
+    .navigation {
+      position: absolute;
+      top: 67px;
+      right: 160px;
+      z-index: 2;
+      .swiper-button-disabled {
+        opacity: 0;
+      }
+      button {
+        transition: var(--trs-300);
+        background: none;
+        cursor: pointer;
+        border: none;
+      }
+    }
+  }
+}

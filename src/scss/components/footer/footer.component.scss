@@ -1,0 +1,143 @@
+@import "../../common/files/variables.scss";
+
+.footer {
+  background: var(--red-color);
+  .top {
+    position: relative;
+
+    .top-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 86px;
+      padding-bottom: 80px;
+      @media (max-width: $pre-mob) {
+        padding-bottom: 100px;
+        padding-top: 30px;
+      }
+      .socials-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .socials {
+          display: flex;
+          align-items: center;
+          gap: 15px;
+        }
+        a {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          font-family: Roboto, sans-serif;
+          color: var(--white-color);
+        }
+      }
+    }
+    .capital-group {
+      position: absolute;
+      right: 20px;
+      bottom: 20px;
+      @media (max-width: $pre-mob) {
+        right: 0;
+        left: 0;
+        margin: auto;
+
+        width: fit-content;
+      }
+    }
+  }
+  .bottom {
+    border-top: 1px solid var(--white-color);
+    padding-top: 18px;
+    padding-bottom: 22px;
+    @media (max-width: $tab) {
+      padding-bottom: 4px;
+    }
+    @media (max-width: $pre-mob) {
+      padding-bottom: 30px;
+      margin-top: 20px;
+    }
+    .bottom-inner {
+      display: grid;
+      justify-content: space-between;
+      align-items: center;
+      grid-template-areas: "info policy contacts";
+      grid-template-columns: repeat(3, 1fr);
+      @media (max-width: $tab) {
+        grid-template-areas: "info contacts" "policy policy";
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 6px;
+      }
+      @media (max-width: $pre-mob) {
+        grid-template-areas: "info" "contacts" "policy";
+        grid-template-columns: 1fr;
+        row-gap: 10px;
+      }
+      .info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        grid-area: info;
+        position: relative;
+        .info-tooltip {
+          bottom: 42px;
+        }
+        button {
+          background: none;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 0;
+        }
+        & > p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 19px;
+          font-family: Roboto, sans-serif;
+          color: var(--white-color);
+        }
+      }
+      .policy {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        color: rgba(255, 255, 255, 0.68);
+        font-family: "ITC-Officina", sans-serif;
+        font-weight: 400;
+        font-size: 10px;
+        line-height: 12px;
+        grid-area: policy;
+        @media (max-width: $tab) {
+          justify-content: flex-start;
+        }
+        @media (max-width: $pre-mob) {
+          margin-top: 8px;
+        }
+      }
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 2px;
+        grid-area: contacts;
+        @media (max-width: $pre-mob) {
+          align-items: flex-start;
+        }
+        a,
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          font-family: "ITC-Officina", sans-serif;
+          color: var(--white-color);
+        }
+        a {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

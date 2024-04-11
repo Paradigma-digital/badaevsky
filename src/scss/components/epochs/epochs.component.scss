@@ -1,0 +1,211 @@
+@import "../../common/files/variables.scss";
+
+.epochs {
+  margin-top: 250px;
+  @media (max-width: $tab) {
+    margin-top: 150px;
+  }
+  @media (max-width: $pre-mob) {
+    margin-top: 80px;
+  }
+  .epoch-lines {
+    height: 484px;
+    margin-top: 100px;
+    overflow: hidden;
+    background-image: url("../img/epochs/alert-bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: $tab) {
+      height: 300px;
+    }
+    @media (max-width: $pre-mob) {
+      height: 178px;
+      margin-top: 80px;
+    }
+    .black-lines {
+      height: 100%;
+      position: relative;
+      .line {
+        width: 40px;
+        background: var(--black-color);
+        height: 800px;
+        display: block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        @media (max-width: $tab) {
+          width: 26px;
+        }
+        @media (max-width: $pre-mob) {
+          width: 15px;
+          height: 400px;
+        }
+        &:nth-child(1) {
+          left: 5%;
+          span {
+            left: -77px;
+            width: 196px;
+            bottom: -180px;
+            @media (max-width: $tab) {
+              width: 126px;
+              left: -50px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 77px;
+              left: -31px;
+            }
+          }
+        }
+        &:nth-child(2) {
+          left: 12%;
+          transform: rotate(5deg);
+          @media (max-width: $tab-sm) {
+            left: 13%;
+          }
+          span {
+            width: 130px;
+            left: -45px;
+            top: -200px;
+            @media (max-width: $tab) {
+              width: 90px;
+              left: -32px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 50px;
+              left: -17px;
+            }
+          }
+        }
+        &:nth-child(3) {
+          left: 19%;
+          @media (max-width: $tab-sm) {
+            left: 21%;
+          }
+        }
+        &:nth-child(4) {
+          left: 26%;
+
+          transform: rotate(-8deg);
+          @media (max-width: $tab-sm) {
+            left: 30%;
+          }
+          span {
+            left: -45px;
+            width: 130px;
+            bottom: -240px;
+            @media (max-width: $tab) {
+              width: 87px;
+              left: -31px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 49px;
+              left: -17px;
+            }
+          }
+        }
+        &:nth-child(5) {
+          left: 34%;
+          @media (max-width: $tab-sm) {
+            left: 39%;
+          }
+          span {
+            left: -147px;
+
+            width: 333px;
+            top: -80px;
+            @media (max-width: $tab) {
+              width: 213px;
+              left: -93px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 135px;
+              left: -60px;
+              top: -160px;
+            }
+          }
+        }
+        &:nth-child(6) {
+          left: 45%;
+          @media (max-width: $tab-sm) {
+            left: 51%;
+          }
+          span {
+            width: 95px;
+            left: -28px;
+            top: 300px;
+            @media (max-width: $tab) {
+              width: 69px;
+              left: -22px;
+            }
+            @media (max-width: $pre-mob) {
+              width: 35px;
+              left: -10px;
+              top: 200px;
+            }
+          }
+        }
+        &:nth-child(7) {
+          left: 54%;
+          transform: rotate(-8deg);
+          @media (max-width: $tab-sm) {
+            left: 60%;
+          }
+        }
+        &:nth-child(8) {
+          left: 57%;
+          @media (max-width: $tab-sm) {
+            left: 65%;
+          }
+        }
+        &:nth-child(9) {
+          left: 63%;
+          transform: rotate(8deg);
+          @media (max-width: $tab-sm) {
+            left: 74%;
+          }
+        }
+        &:nth-child(10) {
+          left: 93%;
+        }
+        span {
+          color: var(--red-color);
+          transform: rotate(-90deg);
+          display: block;
+          font-weight: 65;
+          font-size: 50px;
+          height: 42px;
+
+          line-height: 50px;
+          font-family: "TT Trailers", sans-serif;
+          letter-spacing: 5px;
+          white-space: nowrap;
+          margin: auto;
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          // height: fit-content;
+          // width: fit-content;
+          padding: 0 15px;
+          background: var(--white-color);
+          text-transform: uppercase;
+          @media (max-width: $tab) {
+            font-size: 30px;
+            line-height: 30px;
+            letter-spacing: 3px;
+            height: 30px;
+          }
+          @media (max-width: $pre-mob) {
+            font-size: 17px;
+            line-height: 17px;
+            height: 18px;
+            padding: 0 5px;
+          }
+        }
+      }
+    }
+  }
+}

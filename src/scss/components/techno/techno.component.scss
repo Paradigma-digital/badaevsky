@@ -1,0 +1,11 @@
+@import "../../common/files/variables.scss";
+
+.techno {
+  margin-top: 250px;
+  @media (max-width: $tab) {
+    margin-top: 150px;
+  }
+  @media (max-width: $pre-mob) {
+    margin-top: 80px;
+  }
+}
