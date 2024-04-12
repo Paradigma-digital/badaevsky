@@ -3,6 +3,7 @@ export const heroSlider = () => {
   const before = document.querySelector(".before");
   const beforeImage = before.querySelector("img");
   const change = document.querySelector(".change");
+  const changeSlide = document.querySelector(".change-slide");
   const body = document.body;
 
   let isActive = false;
@@ -43,7 +44,7 @@ export const heroSlider = () => {
     pauseEvents(e);
   });
 
-  change.addEventListener("touchstart", () => {
+  changeSlide.addEventListener("touchstart", () => {
     isActive = true;
   });
 
